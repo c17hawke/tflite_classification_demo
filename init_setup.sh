@@ -9,13 +9,15 @@ pip install -r requirements.txt
 # echo [$(date)]: "export conda environment"
 # conda env export > conda.yaml
 echo [$(date)]: "create an src directory"
-mkdir src && touch src/__init__.py src/main.py
+mkdir -p src && touch src/__init__.py src/main.py
 # echo [$(date)]: "initialize git repository"
 # git init
-echo [$(date)]: "Curl .gitignore for python"
-curl https://raw.githubusercontent.com/c17hawke/Pytorch-basics/main/.gitignore > .gitignore
 # echo [$(date)]: "add env to gitignore"
 # echo "env/" >> .gitignore
 
 # to remove everything -
 # rm -rf env/ .gitignore conda.yaml README.md .git/
+echo [$(date)]: "Now we can activate our environment"
+echo [$(date)]: "by using below command"
+echo [$(date)]: "conda activate ./env"
+echo [$(date)]: "END"
