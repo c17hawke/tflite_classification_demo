@@ -2,6 +2,7 @@ import os
 import argparse
 from pathlib import Path
 from src.utils.common import read_yaml
+from src.utils.train import training_model
 
 def main(training, config):
     config = read_yaml(config)
@@ -9,7 +10,7 @@ def main(training, config):
         print("do prediction")
     else:
         print("do training")
-        training(config)
+        training_model(config)
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
