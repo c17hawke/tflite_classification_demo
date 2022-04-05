@@ -7,3 +7,9 @@ train:
 
 predict:
   test_img_path: d:/oneNeuron/Source/tflite_testing/daisy.jpeg 
+  label_map:
+    0: daisy 
+    1: dandelion 
+    2: roses
+    3: sunflowers 
+    4: tulips
