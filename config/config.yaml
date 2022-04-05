@@ -4,3 +4,6 @@ train:
   model_file_dir: data/model_dir
   data_file_name: flower_photos.tgz
   base_url: https://storage.googleapis.com/download.tensorflow.org/example_images/
+
+predict:
+  test_img_path: d:/oneNeuron/Source/tflite_testing/daisy.jpeg 

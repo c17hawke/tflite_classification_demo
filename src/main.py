@@ -3,11 +3,13 @@ import argparse
 from pathlib import Path
 from src.utils.common import read_yaml
 from src.utils.train import training_model
+from src.utils.predict import prediction
 
 def main(training, config):
     config = read_yaml(config)
     if not training:
         print("do prediction")
+        prediction(config)
     else:
         print("do training")
         training_model(config)
