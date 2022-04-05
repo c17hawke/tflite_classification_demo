@@ -3,7 +3,8 @@ import imghdr
 import numpy as np
 import sys
 import cv2
-import tensorflow.lite as tflite
+# import tensorflow.lite as tflite
+import tflite_runtime.interpreter as tflite
 
 def get_img(img_path):
     exist = os.path.join(img_path)
